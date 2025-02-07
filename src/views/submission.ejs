@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= pageTitle %></title>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        padding: 2rem;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      .message-box {
+        background: #f8f9fa;
+        padding: 1rem;
+        margin: 1rem 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Thanks <%= username %>! 🎉</h1>
+      <p>
+        We've received your message and will respond to
+        <strong><%= email %></strong> shortly.
+      </p>
+
+      <div class="message-box">
+        <h3>Your Message:</h3>
+        <p><%= message %></p>
+      </div>
+
+      <a href="/">← Back to form</a>
+    </div>
+
+    <footer style="margin-top: 2rem; text-align: center">
+      <p>© <%= currentYear %> All rights reserved. </p>
+    </footer>
+  </body>
+</html>
